@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="name">Name</string>
+    <string name="name_description">Input Your Name</string>
+    <string name="email">Email</string>
+    <string name="email_description">Input Your Email</string>
+    <string name="invalidEmail">Invalided Email</string>
+    <string name="password">Password</string>
+    <string name="password_description">Input Your Password</string>
+    <string name="password_error">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="login">Login</string>
+    <string name="is_signup">Dont Have An Account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="is_login">Already Have An Account?</string>
+    <string name="title_welcome_page">Share Your Enjoyfull Moment</string>
+    <string name="message_welcome_page">Make your life brighter</string>
+    <!--Story-->
+    <string name="story_title">Your Title</string>
+    <string name="story_description">Description</string>
+    <string name="story_list">Story</string>
+    <string name="story_list_dsc">Make a new post</string>
+    <string name="change_language">languange</string>
+    <string name="logout">Logout</string>
+    <!--Content Description-->
+    <string name="add_story">Make a new story</string>
+    <string name="image">Image User</string>
+    <!--Camera-->
+    <string name="camera_x">CameraX</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="upload">Unggah</string>
+    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!--Maps-->
+    <string name="maps">Maps</string>
+    <string name="normal_type">Normal</string>
+    <string name="satellite_type">Satellite</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
+    <!--Loading-->
+    <string name="retry">Retry</string>
+
+</resources>

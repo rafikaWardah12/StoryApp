@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:alpha="0"
+        >
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:alpha="0"/>
+
+        <com.example.storyapp.MyEditTextEmail
+            android:id="@+id/ed_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:hint="@string/email_description"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:alpha="0">
+        </com.example.storyapp.MyEditTextEmail>
+
+        <TextView
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:alpha="0"/>
+
+<!--        <EditText-->
+<!--            android:id="@+id/ed_login_password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginBottom="96dp"-->
+<!--            android:background="@drawable/background_edittext"-->
+<!--            android:ems="10"-->
+<!--            android:hint="@string/password_description"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:paddingStart="16dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="18sp"-->
+<!--            android:password="true"-->
+<!--            tools:ignore="Deprecated"-->
+<!--            />-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_login_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="50dp"
+            android:hint="@string/password_description"
+            app:boxBackgroundMode="outline"
+            android:outlineProvider="background"
+            app:boxBackgroundColor="@color/coba"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:passwordToggleEnabled="true"
+            android:alpha="0"
+            >
+        <com.example.storyapp.MyEditTextPassword
+            android:id="@+id/ed_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:outlineAmbientShadowColor="@color/white"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:backgroundTint="@color/white"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="139dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:srcCompat="@mipmap/lock2" />
+
+    <LinearLayout
+        android:id="@+id/txt_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        android:alpha="0">
+
+        <TextView
+            android:id="@+id/is_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/is_signup" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/purple"
+            android:text="@string/signup" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:layout_marginTop="35dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:alpha="0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

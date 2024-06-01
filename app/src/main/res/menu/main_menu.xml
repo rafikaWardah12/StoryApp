@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:title="Home"-->
+<!--            android:icon="@drawable/baseline_house_24"/>-->
+<!--    </group>-->
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:title="Profile">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="nav_logout"-->
+<!--                    android:title="Logout"-->
+<!--                    android:icon="@drawable/baseline_logout_24"-->
+<!--                    />-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--    </group>-->
+    <item
+        android:id="@+id/maps"
+        android:title="@string/maps"
+        android:icon="@drawable/baseline_map_24"
+        app:showAsAction="ifRoom|withText"
+        android:iconTint="@color/white"/>
+
+    <item
+        android:id="@+id/menu_language"
+        android:title="@string/change_language"
+        android:icon="@drawable/baseline_language_24"
+        app:showAsAction="ifRoom|withText"
+        android:iconTint="@color/white"/>
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/logout"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/baseline_logout_24"
+        android:iconTint="@color/white"/>
+
+</menu>
